@@ -1,0 +1,17 @@
+server:
+   port: 2026
+
+
+   config:
+     import:
+        optional:
+           configserver: http://localhost:9093
+
+management:
+   endpoints:
+      web: 
+        exposure:
+           include: refresh
+   
+
+msg=HAPPY NEW YEAR 2026
